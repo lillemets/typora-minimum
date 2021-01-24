@@ -1,0 +1,23 @@
+/* Regular */
+@font-face {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sen Regular'), local('Sen-Regular'), url('Sen-Regular.woff2') format('woff2');
+}
+
+/* Bold*/
+@font-face {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Sen Bold'), local('Sen-Bold'), url('Sen-700.woff2') format('woff2'); 
+}
+
+/* Monospace */
+@font-face {
+  font-family: 'FantasqueSansMono';
+  font-style: normal;
+  font-weight: normal;
+  src: local('FantasqueSansMono'), local('FantasqueSansMono-Regular'), url('FantasqueSansMono-Regular.woff2') format('woff2');
+}

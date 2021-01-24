@@ -1,0 +1,181 @@
+@import 'minimum/fonts.css';
+
+/* Variables */
+
+:root {
+   --bg-color:  #fff;
+   --text-color: #333;
+   --md-char-color: #aaa;
+   --meta-content-color: #aaa;
+
+   --primary-color: #317873; /* Myrtle green */
+   --medium-color: #3b918b;
+   --light-color: #c9e9e7;
+   --primary-btn-border-color: #555;
+   --primary-btn-text-color: #555;
+
+   --active-file-bg-color: #eee;
+   --active-file-text-color: inherit;
+   --active-file-border-color: #ccc;
+
+   --side-bar-bg-color: #fafafa;
+   --border-color: #ccc;
+   --window-border: 1px solid #fff;
+
+   --item-hover-bg-color: rgba(229, 229, 229, 0.59);
+   --item-hover-text-color: #555;
+
+   --font-family: 'Sen';
+   --code-font-family: 'FantasqueSansMono';
+   --monospace: 'FantasqueSansMono', monospace;
+}
+
+/* General */
+
+html, body {
+  background-color: var(--bg-color);
+  font-family: var(--font-family), sans-serif;
+  font-size: 16px;
+}
+
+#write {
+  max-width: 720px;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+/* Headings */
+
+h1 { font-size: 1.6em; margin-left: 0px }
+h2 { font-size: 1.4em; margin-left: 0px }
+h3 { font-size: 1.3em; margin-left: 0px }
+h4 { font-size: 1.2em; margin-left: 0px }
+h5 { font-size: 1.1em; margin-left: 0px }
+h6 { font-size: 1.0em; margin-left: 0px }
+
+/* Blockquote */
+
+blockquote {
+    border-left: 4px solid var(--border-color);
+    padding: 0 15px;
+    color: var(--active-file-text-color);
+}
+
+blockquote blockquote {
+    padding-right: 0;
+}
+
+/* Code */
+
+.md-fences, code {
+  padding: 2px 4px;
+  font-size: .9em;
+  font-family: var(--code-font-family), monospace;
+  background-color: var(--side-bar-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text-color);
+}
+
+code {
+  padding: 1px 2px;
+  border-radius: 4px;
+}
+
+/* Other text */
+
+a { /* Hyperlinks */
+  color: var(--medium-color);
+  text-decoration: none !important;
+}
+
+mark { /* Highlighted text */
+  background-color: var(--light-color);
+  border-radius: 4px;
+  padding: 1px 2px;
+}
+
+hr { /* Horizontal line */
+  border: 1px solid var(--border-color);
+  margin: 40px auto;
+}
+
+/* Table */
+
+table tr {
+    border-top: 1px solid var(--border-color);
+}
+table th {
+    font-weight: bold;
+    border: 1px solid var(--border-color);
+    padding: 6px 12px;
+}
+table td {
+    border: 1px solid var(--border-color);
+    padding: 6px 12px;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: var(--side-bar-bg-color);
+}
+
+/* Meta */
+
+#write pre.md-meta-block {
+  padding: 10px 20px;
+  font-size: .9em;
+  font-family: var(--code-font-family), monospace;
+  background-color: var(--side-bar-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text-color);
+}
+
+
+#write pre.md-meta-block {
+	border-left: 1000px var(--side-bar-bg-color) solid;
+	margin-left: -1000px;
+	border-right: 1000px var(--side-bar-bg-color) solid;
+	margin-right: -1000px;
+}
+
+/* Source code mode */
+
+.cm-s-typora-default .cm-header, .cm-s-typora-default .cm-property {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.cm-s-typora-default {
+  color: var(--text-color);
+  font-family: var(--code-font-family), monospace;
+}
+
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+  border-left: 3px solid var(--primary-color);
+}
+
+/* Search */
+
+.search-input,
+.search,
+.form-control,
+#file-library-search-input {
+  border-radius: 4px !important;
+}
+
+.search-input:focus,
+.search:focus,
+.form-control:focus,
+#file-library-search-input:focus {
+  border-radius: 4px !important;
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Outline */
+
+.outline-item .outline-label {
+  text-decoration: none;
+
+
