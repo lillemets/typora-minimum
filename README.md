@@ -1,7 +1,7 @@
-# minimum
+# Minimum
 
 This is a minimalistic theme for Typora markdown editor. 
 
-## Screenshot
+## Demonstration
 
 ![](screenshot.png)

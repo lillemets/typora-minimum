@@ -46,12 +46,12 @@ html, body {
 
 /* Headings */
 
-h1 { font-size: 1.6em; margin-left: 0px }
-h2 { font-size: 1.4em; margin-left: 0px }
-h3 { font-size: 1.3em; margin-left: 0px }
-h4 { font-size: 1.2em; margin-left: 0px }
-h5 { font-size: 1.1em; margin-left: 0px }
-h6 { font-size: 1.0em; margin-left: 0px }
+h1 { font-size: 2em; margin-left: 0px; text-align: center;}
+h2 { font-size: 1.5em; margin-left: 0px; }
+h3 { font-size: 1.2em; margin-left: 0px; }
+h4 { font-size: 1.2em; margin-left: 0px; font-weight: 300; }
+h5 { font-size: 1.1em; margin-left: 0px; font-weight: 300; text-align: center;}
+h6 { font-size: 1.0em; margin-left: 0px; font-weight: 300; text-align: right;}
 
 /* Blockquote */
 
@@ -96,27 +96,27 @@ mark { /* Highlighted text */
 }
 
 hr { /* Horizontal line */
-  border: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
   margin: 40px auto;
 }
 
 /* Table */
 
 table tr {
-    border-top: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
 }
 table th {
-    font-weight: bold;
-    border: 1px solid var(--border-color);
-    padding: 6px 12px;
+  font-weight: bold;
+  border: 1px solid var(--border-color);
+  padding: 6px 12px;
 }
 table td {
-    border: 1px solid var(--border-color);
-    padding: 6px 12px;
+  border: 1px solid var(--border-color);
+  padding: 6px 12px;
 }
 table tr:nth-child(2n),
 thead {
-    background-color: var(--side-bar-bg-color);
+  background-color: var(--side-bar-bg-color);
 }
 
 /* Meta */
@@ -177,5 +177,4 @@ thead {
 
 .outline-item .outline-label {
   text-decoration: none;
-
-
+}
